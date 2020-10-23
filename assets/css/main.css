@@ -1,0 +1,30 @@
+/****** Template Style SCSS ******/
+/* Import here */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700&family=Raleway:wght@300;400;600&family=Rubik:wght@300;400;500&display=swap");
+/* COLOR */
+/* GOOGLE FONT */
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive; }
+
+.font-raleway {
+  font-family: "Raleway", sans-serif; }
+
+.font-rubik {
+  font-family: "Rubik", sans-serif; }
+
+.fs-12 {
+  font-size: 12px; }
+
+.fs-14 {
+  font-size: 14px; }
+
+.fs-16 {
+  font-size: 16px; }
+
+.fs-18 {
+  font-size: 18px; }
+
+.fs-20 {
+  font-size: 20px; }
+
+/*# sourceMappingURL=main.css.map */
