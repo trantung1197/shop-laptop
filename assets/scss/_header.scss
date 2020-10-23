@@ -1,0 +1,49 @@
+.nav{
+    height: 60px;
+    border-bottom: 1px solid $color-black;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav__toggler{
+    border: none;
+    background-color: transparent;
+
+    i{
+        font-size: 30px;
+    }
+}
+
+.nav__brand{
+    img{
+        width: 150px;
+    }
+}
+
+.nav__menu{
+    display: none;
+}
+
+.nav__list{
+    display: none;
+}
+
+.nav__icons{
+    display: flex;
+
+    .icon-item{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        border: 1px solid $color-black;
+
+        color: $color-black;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-decoration: none;
+    }
+}

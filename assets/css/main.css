@@ -4,27 +4,88 @@
 /* COLOR */
 /* GOOGLE FONT */
 .font-baloo {
-  font-family: "Baloo Thambi 2", cursive; }
+  font-family: "Baloo Thambi 2", cursive;
+}
 
 .font-raleway {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+}
 
 .font-rubik {
-  font-family: "Rubik", sans-serif; }
+  font-family: "Rubik", sans-serif;
+}
 
 .fs-12 {
-  font-size: 12px; }
+  font-size: 12px;
+}
 
 .fs-14 {
-  font-size: 14px; }
+  font-size: 14px;
+}
 
 .fs-16 {
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 .fs-18 {
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 .fs-20 {
-  font-size: 20px; }
+  font-size: 20px;
+}
+
+/* Global Classes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+}
+
+.nav {
+  height: 60px;
+  border-bottom: 1px solid #2d3436;
+  display: flex;
+  align-items: center;
+}
+
+.nav__toggler {
+  border: none;
+  background-color: transparent;
+}
+.nav__toggler i {
+  font-size: 30px;
+}
+
+.nav__brand img {
+  width: 150px;
+}
+
+.nav__menu {
+  display: none;
+}
+
+.nav__list {
+  display: none;
+}
+
+.nav__icons {
+  display: flex;
+}
+.nav__icons .icon-item {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #2d3436;
+  color: #2d3436;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=main.css.map */
