@@ -47,22 +47,38 @@ button {
 }
 
 .nav {
-  height: 60px;
-  border-bottom: 1px solid #2d3436;
+  height: 80px;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .nav__toggler {
   border: none;
   background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+  cursor: pointer;
 }
 .nav__toggler i {
-  font-size: 30px;
+  font-size: 24px;
+}
+.nav__toggler:active {
+  background-color: #b2bec3;
 }
 
-.nav__brand img {
-  width: 150px;
+.nav__brand {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 30px;
+  color: #2d3436;
+}
+.nav__brand .text-underline {
+  text-decoration: underline;
 }
 
 .nav__menu {
@@ -75,17 +91,23 @@ button {
 
 .nav__icons {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .nav__icons .icon-item {
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border: 1px solid #2d3436;
   color: #2d3436;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 5px;
   text-decoration: none;
+}
+.nav__icons .icon-item i {
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=main.css.map */
