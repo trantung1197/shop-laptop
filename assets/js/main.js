@@ -40,15 +40,16 @@ document.body.addEventListener("click", (event) => {
 const btnCloseSearchBar = getEle(".close-search-bar");
 const labelSearch = getEle(".label-search");
 const searchFormContainer = getEle(".search-form");
-const btnOpenSearch = getEle('.btn-search');
+const btnOpenSearch = getEle(".btn-search");
 
 btnCloseSearchBar.addEventListener("click", () => {
-	console.log(labelSearch);
 	searchFormContainer.classList.add("is-closed");
 	bodyContainer.classList.remove("open-search");
 });
 
-btnOpenSearch.addEventListener('click',()=>{
-    searchFormContainer.classList.remove('is-closed');
-    bodyContainer.classList.add('open-search');
+btnOpenSearch.addEventListener("click", () => {
+	searchFormContainer.classList.remove("is-closed");
+	bodyContainer.classList.add("open-search");
 });
+
+
