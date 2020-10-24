@@ -1,9 +1,5 @@
 ## SHOP-LAPTOP | E-commerce website template
-![img](assets/img/buy-online.svg)  
-
-img[img] {
-  width: 70px;
-}
+![img](assets/img/buy-online.svg){:height="24px" width="48px"}
 
 ### Available Scripts
 
