@@ -15,6 +15,8 @@ removeClassAtListItem = (listNode, className) => {
 	});
 };
 
+/** Function trasnform **/
+
 /* toggle menu nav */
 const btnToggle = getEle(".nav__toggler");
 const bodyContainer = getEle("body");
@@ -57,21 +59,4 @@ btnCloseSearchBar.addEventListener("click", () => {
 btnOpenSearch.addEventListener("click", () => {
 	searchFormContainer.classList.remove("is-closed");
 	bodyContainer.classList.add("open-search");
-});
-
-/** Slide carousel **/
-const btnNext = getEle(".btn-next");
-const btnPrev = getEle(".btn-prev");
-const listSlideItem = getListEle(".slide__item");
-let sizeItem = getEle('.slide__item').clientWidth;
-let indexActive = 0;
-
-btnNext.addEventListener("click", () => {
-	removeClassAtListItem(listSlideItem, "active");
-	listSlideItem[++indexActive].classList.add("active");
-	console.log(indexActive);
-});
-
-btnPrev.addEventListener("click", () => {
-	console.log("object");
 });

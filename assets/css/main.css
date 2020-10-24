@@ -340,7 +340,7 @@ body.open-search::before {
 }
 
 .carousel__slide {
-  width: 100%;
+  display: inline-flex;
 }
 
 .slide__item {
@@ -349,7 +349,6 @@ body.open-search::before {
   align-items: center;
   background-color: #f1f1f1;
   padding: 40px 0;
-  display: none;
 }
 .slide__item .slide__content {
   display: flex;
@@ -379,9 +378,6 @@ body.open-search::before {
 }
 .slide__item .slide__img img {
   width: 215px;
-}
-.slide__item.active {
-  display: flex;
 }
 
 .button-container {

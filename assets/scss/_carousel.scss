@@ -7,7 +7,7 @@
 }
 
 .carousel__slide {
-	width: 100%;
+    display: inline-flex;
 }
 
 .slide__item {
@@ -15,9 +15,8 @@
 	flex-direction: column;
 	align-items: center;
 	background-color: #f1f1f1;
-	padding: 40px 0;
-	
-    display: none;
+    padding: 40px 0;
+    
 	.slide__content {
 		display: flex;
 		flex-direction: column;
@@ -54,10 +53,6 @@
 		img {
 			width: 215px;
 		}
-	}
-
-	&.active {
-        display: flex;
 	}
 }
 
