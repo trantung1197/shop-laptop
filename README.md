@@ -1,6 +1,9 @@
 ## SHOP-LAPTOP | E-commerce website template
 ![myImg](assets/img/buy-online.svg)
 
+### Libraries and Technologies
+
+
 ### Available Scripts
 
 In the project directory, you can run:
