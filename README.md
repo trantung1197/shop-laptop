@@ -1,5 +1,5 @@
-## ![alt text](assets/img/buy-online.svg) SHOP-LAPTOP | E-commerce website template
-
+## SHOP-LAPTOP | E-commerce website template
+![alt text](assets/img/buy-online.svg) 
 ### Available Scripts
 
 In the project directory, you can run:
