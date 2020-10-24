@@ -1,4 +1,4 @@
-## SHOP-LAPTOP | E-commerce website template
+## ![alt text](assets/img/buy-online.svg) SHOP-LAPTOP | E-commerce website template
 
 ### Available Scripts
 
