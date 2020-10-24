@@ -33,6 +33,7 @@
   box-sizing: border-box; }
 
 button {
+  cursor: pointer;
   outline: none; }
 
 /* Global keyfarms */
@@ -103,6 +104,58 @@ body.open-menu::before {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7); }
 
+body.open-search::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.search-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  transition: all 0.3s ease-in-out; }
+  .search-form.is-closed {
+    transform: translateY(-100%); }
+
+.label-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  background-color: #fafafa;
+  border-bottom: 1px solid #b2bec3; }
+  .label-search .search-input {
+    border-bottom: 2px solid #b2bec3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 600px; }
+    .label-search .search-input input {
+      border: none;
+      background-color: transparent;
+      outline: none;
+      font-size: 16px;
+      padding: 8px 10px;
+      flex: 1; }
+    .label-search .search-input button {
+      border: none;
+      background-color: transparent; }
+      .label-search .search-input button:active {
+        color: #d63031; }
+    .label-search .search-input i {
+      width: 20px;
+      height: 20px;
+      font-size: 20px; }
+
 .nav__menu {
   display: block;
   position: fixed;
@@ -163,6 +216,24 @@ body.open-menu::before {
       background-color: #e17055; }
       .nav__icons .icon-item:hover i {
         color: #fafafa; }
+  .nav__icons .shopping-cart {
+    position: relative; }
+    .nav__icons .shopping-cart::after {
+      content: attr(data-numbers);
+      position: absolute;
+      top: -5px;
+      left: 80%;
+      width: 18px;
+      height: 18px;
+      border: none;
+      border-radius: 50%;
+      background-color: #0984e3;
+      color: #fafafa;
+      font-weight: 600;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 @media only screen and (min-width: 500px) {
   .nav__brand {

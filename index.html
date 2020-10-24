@@ -1,112 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Laptop TNT</title>
 
-		<!-- Owl carousel cdn CSS -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-			integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-			integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-			crossorigin="anonymous"
-		/>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Laptop TNT</title>
 
-		<!-- Fontawesome cdn CSS -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-			crossorigin="anonymous"
-		/>
+	<!-- Owl carousel cdn CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+		integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+		crossorigin="anonymous" />
 
-		<!-- Link main CSS -->
-		<link rel="stylesheet" href="./assets/css/main.css" />
-	</head>
-	<body>
-		<!-- Start Header -->
-		<header id="header">
-			<nav class="nav">
-				<button class="nav__toggler" type="button">
-					<i class="fas fa-bars"></i>
-				</button>
+	<!-- Fontawesome cdn CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" />
 
-				<a href="#" class="nav__brand font-raleway">
-					<span class="text-underline">T-Sho</span><span>p</span>
-				</a>
+	<!-- Link main CSS -->
+	<link rel="stylesheet" href="./assets/css/main.css" />
+</head>
 
-				<div class="nav__menu is-closed">
-					<div class="menu__top">
-						<a href="#" class="nav__brand font-raleway">
-							<span class="text-underline">T-Sho</span><span>p</span>
-						</a>
-						<a href="#" class="close__toggle">
+<body>
+	<!-- Start Header -->
+	<header id="header">
+		<nav class="nav">
+			<button class="nav__toggler" type="button">
+				<i class="fas fa-bars"></i>
+			</button>
+
+			<a href="#" class="nav__brand font-raleway">
+				<span class="text-underline">T-Sho</span><span>p</span>
+			</a>
+
+			<div class="nav__menu is-closed">
+				<div class="menu__top">
+					<a href="#" class="nav__brand font-raleway">
+						<span class="text-underline">T-Sho</span><span>p</span>
+					</a>
+					<a href="#" class="close__toggle">
+						<i class="fas fa-times"></i>
+					</a>
+				</div>
+
+				<ul class="nav__list font-rubik">
+					<li class="nav__item scroll-link active">
+						<a href="#header">Home</a>
+					</li>
+					<li class="nav__item scroll-link">
+						<a href="#category">Category</a>
+					</li>
+					<li class="nav__item scroll-link">
+						<a href="#news">Blog</a>
+					</li>
+					<li class="nav__item scroll-link">
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="nav__icons">
+				<a href="#" class="icon-item"><i class="fas fa-user"></i></a>
+				<a href="#" class="icon-item btn-search"><i class="fas fa-search"></i></a>
+				<a href="#" class="icon-item shopping-cart" data-numbers="5"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+
+			<!-- input search -->
+			<form class="search-form is-closed">
+				<label for="search-product" class="label-search">
+					<div class="search-input">
+						<button type="submit">
+							<i class="fas fa-search"></i>
+						</button>
+						<input type="text" name="search" id="search-product" placeholder="Search..." />
+						<button type="button" class="close-search-bar">
 							<i class="fas fa-times"></i>
-						</a>
+						</button>
 					</div>
+				</label>
+			</form>
+		</nav>
+	</header>
+	<!-- End Header -->
 
-					<ul class="nav__list font-rubik">
-						<li class="nav__item scroll-link active">
-							<a href="#header">Home</a>
-						</li>
-						<li class="nav__item scroll-link">
-							<a href="#category">Category</a>
-						</li>
-						<li class="nav__item scroll-link">
-							<a href="#news">Blog</a>
-						</li>
-						<li class="nav__item scroll-link">
-							<a href="#contact">Contact</a>
-						</li>
-					</ul>
-				</div>
+	<!-- Start Main -->
+	<main></main>
+	<!-- End Main -->
 
-				
-				<div class="nav__icons">
-					<a href="#" class="icon-item"
-						><i class="fas fa-user"></i
-					></a>
-					<a href="#" class="icon-item btn-search"
-						><i class="fas fa-search"></i
-					></a>
-					<a href="#" class="icon-item"
-						><i class="fas fa-shopping-cart"></i
-					></a>
-				</div>
-			</nav>
-		</header>
-		<!-- End Header -->
+	<!-- Start Footer -->
+	<footer></footer>
+	<!-- End Footer -->
 
-		<!-- Start Main -->
-		<main>
+	<!-- Owl carousel cdn JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+		integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+		integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+		crossorigin="anonymous"></script>
 
-		</main>
-		<!-- End Main -->
+	<!-- My JS -->
+	<script src="./assets/js/main.js"></script>
+</body>
 
-		<!-- Start Footer -->
-		<footer></footer>
-		<!-- End Footer -->
-
-		<!-- Owl carousel cdn JS -->
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-			integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-			integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-			crossorigin="anonymous"
-		></script>
-
-		<!-- My JS -->
-		<script src="./assets/js/main.js"></script>
-	</body>
 </html>
