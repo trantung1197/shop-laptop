@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "google-chrome http://localhost/shop-laptop; sass --watch ./assets/scss/main.scss:./assets/css/main.css"
+    "start" : "sass --watch ./assets/scss/main.scss:./assets/css/main.css;"
   },
   "author": "Tran Tung",
   "license": "ISC",
