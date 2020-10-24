@@ -1,3 +1,3 @@
-# shop-laptop | PHP, MySQL
+## SHOP-LAPTOP | E-commerce website template
 
 
