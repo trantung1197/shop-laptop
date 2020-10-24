@@ -1,5 +1,5 @@
 ## SHOP-LAPTOP | E-commerce website template
-![alt text](assets/img/buy-online.svg) 
+![alt text](assets/img/buy-online.svg =50x50)  
 ### Available Scripts
 
 In the project directory, you can run:
