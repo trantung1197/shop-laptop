@@ -1,10 +1,8 @@
 ## SHOP-LAPTOP | E-commerce website template
 ![img](assets/img/buy-online.svg)  
 
-img[alt=img] {
-  width: 70%;
-  border: none;
-  background: none;
+img[img] {
+  width: 70px;
 }
 
 ### Available Scripts
