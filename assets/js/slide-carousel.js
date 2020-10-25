@@ -8,9 +8,24 @@ let carouselLenght = listSlideItem.length;
 let sizeItem = window.innerWidth;
 let counter = 1;
 let isLoop = true;
-let timeTrans = 0.3;
+let timeTrans = 1;
 let timeInterval = 5000;
 let autoSlide = true;
+
+/* function get element */
+getEle = (params) => {
+	return document.querySelector(params);
+};
+getListEle = (params) => {
+	return document.querySelectorAll(params);
+};
+
+/* function remove class from list node */
+removeClassAtListItem = (listNode, className) => {
+	listNode.forEach((ele) => {
+		ele.classList.remove(className);
+	});
+};
 
 //create navigation button radio
 createInputRadio = (id) => {
@@ -83,13 +98,17 @@ transformSlide = (isNext) => {
 		if (counter <= 0) return;
 		counter--;
 	}
-	carouselSlide.style.transition = `transform ${timeTrans}s ease-in-out`;
+	// listSlideItem[counter-1].style.animation = `fadeOut ${timeTrans}s ease-in-out`;
+	
+	carouselSlide.style.transition = `all ${timeTrans}s ease-in-out`;
 	carouselSlide.style.transform = `translateX(${-sizeItem * counter}px)`;
+	removeClassAtListItem(listSlideItem, 'active');
+	listSlideItem[counter].classList.add('active');
 	setCheckedRadio(counter - 1);
 };
 
 transformSlideRadio = (num) => {
-	carouselSlide.style.transition = `transform ${timeTrans}s ease-in-out`;
+	carouselSlide.style.transition = `all ${timeTrans}s ease-in-out`;
 	carouselSlide.style.transform = `translateX(${-sizeItem * num}px)`;
 };
 
