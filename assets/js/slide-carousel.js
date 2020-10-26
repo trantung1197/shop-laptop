@@ -69,33 +69,12 @@ setCheckedRadio = (index) => {
 
 setCheckedRadio(0);
 
-/** clone item slide **/
-// if (isLoop) {
-// 	//start at first element = index: 1
-// 	counter = 1;
-// 	carouselSlide.style.transform = `translateX(${-sizeItem * counter}px)`;
-
-// 	let firstSlideChildClone = carouselSlide.firstElementChild.cloneNode(true);
-// 	let lastSlideChildClone = carouselSlide.lastElementChild.cloneNode(true);
-// 	carouselSlide.append(firstSlideChildClone);
-// 	carouselSlide.prepend(lastSlideChildClone);
-// 	listSlideItem = getListEle(".slide__item");
-// 	carouselLenght = listSlideItem.length;
-
-// 	//add class to clone element
-// 	listSlideItem[carouselLenght - 1].classList.add("clone-first");
-// 	listSlideItem[0].classList.add("clone-last");
-// }
-
 resetWidthOfSlideItem(listSlideItem, sizeItem);
 
 window.onresize = function (event) {
 	sizeItem = window.innerWidth;
 	resetWidthOfSlideItem(listSlideItem, sizeItem);
 };
-
-// //start at first element = index: 1
-// carouselSlide.style.transform = `translateX(${-sizeItem * counter}px)`;
 
 transformSlide = (isNext) => {
 	console.log(counter);
@@ -142,25 +121,6 @@ btnNext.addEventListener("click", () => {
 btnPrev.addEventListener("click", () => {
 	transformSlide(false);
 });
-
-// //reset loop
-// carouselSlide.addEventListener("transitionend", () => {
-// 	if (isLoop) {
-// 		if (listSlideItem[counter].classList.contains("clone-last")) {
-// 			carouselSlide.style.transition = "none";
-// 			counter = carouselLenght - 2;
-// 			carouselSlide.style.transform = `translateX(${
-// 				-sizeItem * counter
-// 			}px)`;
-// 		} else if (listSlideItem[counter].classList.contains("clone-first")) {
-// 			carouselSlide.style.transition = "none";
-// 			counter = 1;
-// 			carouselSlide.style.transform = `translateX(${
-// 				-sizeItem * counter
-// 			}px)`;
-// 		}
-// 	}
-// });
 
 // auto loop
 if (autoSlide & isLoop) {
